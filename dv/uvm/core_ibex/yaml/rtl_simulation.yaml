@@ -87,7 +87,7 @@
 
   sim:
     cmd: >
-      vsim -c <sim_opts> <cov_opts> -sv_seed <seed> -lib <out>/work +access +r+w +UVM_TESTNAME=<rtl_test> +bin=<binary> +ibex_tracer_file_base="<sim_dir>/trace_core" -l <sim_dir>/sim.log -do "run -all; endsim; quit -force"
+      vsim -c <sim_opts> <cov_opts> -sv_seed <seed> -lib <out>/work +access +r+w +UVM_TESTNAME=<rtl_test> +bin=<binary> +ibex_tracer_file_base="<sim_dir>/trace_core" -l <sim_dir>/sim.log -do "run -all;"
     cov_opts: >
       -acdb_file <out>/cov.acdb
 
